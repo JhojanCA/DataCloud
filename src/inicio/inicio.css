@@ -3,11 +3,12 @@
 body {
     overflow-x: hidden;
     background: url(/assets/fondo.jpg) center;
+    background-size: cover;
 }
 
 .intro {
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

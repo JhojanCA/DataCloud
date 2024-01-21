@@ -8,14 +8,14 @@ class navbarDatacloud extends HTMLElement {
     <nav id="navdata" class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a id="img1" class="navbar-brand d-none" href="#">
-                <img src="/assets/logoIcon.png" width="30" class="ms-lg-4 ms-sm-2">
+                <img src="/assets/logoIcon.png" width="30" class="ms-lg-5 ms-md-4 ms-sm-2">
                 <img src="/assets/logoLetras.png" width="180" class="ms-1">
             </a>
             <a id="img2" class="navbar-brand" href="#">
-                <img src="/assets/logoIconBlanco.png" width="30" class="ms-lg-4 ms-sm-2">
+                <img src="/assets/logoIconBlanco.png" width="30" class="ms-lg- ms-md-4 ms-sm-2">
                 <img src="/assets/logoLetrasBlanco.png" width="180" class="ms-1">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,11 +31,6 @@ class navbarDatacloud extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link active" href="../inicio/inicio.html">
                                      Inicio
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="../nosotros/nosotros.html">
-                                    <i class="fa-solid fa-building-user"></i> Nosotros
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -119,7 +114,6 @@ window.addEventListener("scroll", () => {
   let img1 = document.getElementById("img1");
   let img2 = document.getElementById("img2");
   let navLinks = document.querySelectorAll(".navbar .offcanvas-body .nav-link");
-  let navLinksAfter = document.querySelectorAll(".nav-link::after");
 
   if (window.scrollY > 0) {
     navbar.classList.add("bg-body-tertiary");
@@ -128,9 +122,6 @@ window.addEventListener("scroll", () => {
     navLinks.forEach((link) => {
       link.style.color = "#003857";
     });
-    navLinksAfter.forEach((link) => {
-      link.style.background = "#003857";
-    });
   } else {
     navbar.classList.remove("bg-body-tertiary");
     img1.classList.add("d-none");
@@ -138,8 +129,12 @@ window.addEventListener("scroll", () => {
     navLinks.forEach((link) => {
       link.style.color = "#fff";
     });
-    navLinksAfter.forEach((link) => {
-      link.style.background = "#fff";
-    });
   }
+});
+
+document.getElementById("menu").addEventListener("click", () => {
+  let navLinks = document.querySelectorAll(".navbar .offcanvas-body .nav-link");
+  navLinks.forEach((link) => {
+    link.style.color = "#003857";
+  });
 });
