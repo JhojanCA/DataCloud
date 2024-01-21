@@ -1,33 +1,26 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-.nav-link {
-    color: #003857;
+body {
+    overflow-x: hidden;
+    background: url(/assets/fondo.jpg) center;
+}
+
+.intro {
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.intro h1 {
     font-family: 'Rubik', sans-serif;
-    display: inline-block;
-    position: relative;
-    line-height: normal;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    border-bottom: 2px solid transparent;
-    margin-inline: 10px;
-    cursor: pointer;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
 }
-
-.nav-link::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background: #003857;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 0.2s ease-in-out;
-}
-
-.nav-link:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-} */

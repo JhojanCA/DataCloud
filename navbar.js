@@ -5,11 +5,15 @@ class navbarDatacloud extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="navdata" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a id="img1" class="navbar-brand d-none" href="#">
                 <img src="/assets/logoIcon.png" width="30" class="ms-lg-4 ms-sm-2">
                 <img src="/assets/logoLetras.png" width="180" class="ms-1">
+            </a>
+            <a id="img2" class="navbar-brand" href="#">
+                <img src="/assets/logoIconBlanco.png" width="30" class="ms-lg-4 ms-sm-2">
+                <img src="/assets/logoLetrasBlanco.png" width="180" class="ms-1">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -25,19 +29,29 @@ class navbarDatacloud extends HTMLElement {
                     <div class="d-flex">
                         <ul class="navbar-nav me-4 mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" href="../inicio/inicio.html">Inicio</a>
+                                <a class="nav-link active" href="../inicio/inicio.html">
+                                     Inicio
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Nosotros</a>
+                                <a class="nav-link active" href="../nosotros/nosotros.html">
+                                    <i class="fa-solid fa-building-user"></i> Nosotros
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../servicios/servicios.html">Servicios</a>
+                                <a class="nav-link active" href="../servicios/servicios.html">
+                                    <i class="fa-solid fa-server"></i> Servicios
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Proyectos</a>
+                                <a class="nav-link active" href="../proyectos/proyectos.html">
+                                    <i class="fa-solid fa-chalkboard-user"></i> Proyectos
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Contacto</a>
+                                <a class="nav-link active" href="../contacto/contacto.html">
+                                    <i class="fa-solid fa-phone-volume"></i> Contacto
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -49,8 +63,17 @@ class navbarDatacloud extends HTMLElement {
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+        .navbar {
+            transition: .4s ease-in-out;
+            position: fixed;
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
         .nav-link {
-            color: #003857;
             font-family: 'Rubik', sans-serif;
             display: inline-block;
             position: relative;
@@ -80,8 +103,43 @@ class navbarDatacloud extends HTMLElement {
             transform-origin: left;
             transform: scaleX(1);
         }
+
+        .navbar .offcanvas-body .nav-link {
+            color: #fff;
+        }
+
     </style>`;
   }
 }
 
 window.customElements.define("navbar-datacloud", navbarDatacloud);
+
+window.addEventListener("scroll", () => {
+  let navbar = document.getElementById("navdata");
+  let img1 = document.getElementById("img1");
+  let img2 = document.getElementById("img2");
+  let navLinks = document.querySelectorAll(".navbar .offcanvas-body .nav-link");
+  let navLinksAfter = document.querySelectorAll(".nav-link::after");
+
+  if (window.scrollY > 0) {
+    navbar.classList.add("bg-body-tertiary");
+    img1.classList.remove("d-none");
+    img2.classList.add("d-none");
+    navLinks.forEach((link) => {
+      link.style.color = "#003857";
+    });
+    navLinksAfter.forEach((link) => {
+      link.style.background = "#003857";
+    });
+  } else {
+    navbar.classList.remove("bg-body-tertiary");
+    img1.classList.add("d-none");
+    img2.classList.remove("d-none");
+    navLinks.forEach((link) => {
+      link.style.color = "#fff";
+    });
+    navLinksAfter.forEach((link) => {
+      link.style.background = "#fff";
+    });
+  }
+});
