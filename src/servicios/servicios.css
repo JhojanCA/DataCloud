@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+.intro {
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background: url(/assets/fondo.jpg) center;
+    background-size: cover;
+}
+
+.intro h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    margin-block: 5%;
+}
+
+.container .services {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #003857;
+    color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.container .services i {
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.container .services p {
+    font-weight: bold;
+    margin-inline: 1rem;
+}
+
+.container h2 {
+    text-align: center;
+    margin: 3rem;
+    font-weight: bold;
+    color: #003857;
+}
+
+.container ul {
+    list-style: none;
+}
+
+.container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.container li::before {
+    content: '';
+    display: inline-block;
+    background-image: url(/assets/iconEthernet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.container img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}

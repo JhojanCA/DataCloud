@@ -44,7 +44,7 @@ class navbarDatacloud extends HTMLElement {
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="../contacto/contacto.html">
+                                <a class="nav-link active" href="#">
                                     <i class="fa-solid fa-phone-volume"></i> Contacto
                                 </a>
                             </li>
@@ -62,6 +62,10 @@ class navbarDatacloud extends HTMLElement {
             transition: .4s ease-in-out;
             position: fixed;
             width: 100%;
+        }
+
+        .box {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .navbar-toggler {
@@ -117,6 +121,7 @@ window.addEventListener("scroll", () => {
 
   if (window.scrollY > 0) {
     navbar.classList.add("bg-body-tertiary");
+    navbar.classList.add("box");
     img1.classList.remove("d-none");
     img2.classList.add("d-none");
     navLinks.forEach((link) => {
@@ -124,6 +129,7 @@ window.addEventListener("scroll", () => {
     });
   } else {
     navbar.classList.remove("bg-body-tertiary");
+    navbar.classList.remove("box");
     img1.classList.add("d-none");
     img2.classList.remove("d-none");
     navLinks.forEach((link) => {
