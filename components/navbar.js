@@ -44,7 +44,7 @@ class navbarDatacloud extends HTMLElement {
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">
+                                <a class="nav-link active" href="#footer">
                                     <i class="fa-solid fa-phone-volume"></i> Contacto
                                 </a>
                             </li>
@@ -62,6 +62,7 @@ class navbarDatacloud extends HTMLElement {
             transition: .4s ease-in-out;
             position: fixed;
             width: 100%;
+            z-index: 9999;
         }
 
         .box {
@@ -70,6 +71,7 @@ class navbarDatacloud extends HTMLElement {
 
         .navbar-toggler {
             border: none;
+            margin-inline: 1rem;
         }
 
         .nav-link {

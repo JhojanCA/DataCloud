@@ -5,7 +5,7 @@ class footerDatacloud extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <footer>
+    <footer id="footer">
         <div class="row ms-2">
             <div class="col-5 d-flex align-items-center">
                 <img src="/assets/logoBlanco.png" class="logo">

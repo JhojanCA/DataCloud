@@ -35,18 +35,16 @@ body {
     width: 100%;
     height: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     font-family: 'Rubik', sans-serif;
-    margin-block: 5%;
+    margin-block: 3rem;
+    padding-top: 4rem;
 }
 
 .container h1 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 5rem;
-    margin-inline: 3rem;
     font-weight: bold;
     color: #003857;
 }
@@ -55,6 +53,14 @@ body {
     font-weight: bold;
     color: #003857;
     margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.container h4 {
+    font-weight: bold;
+    color: #003857;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 
@@ -63,4 +69,91 @@ body {
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.container li::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 1rem;
+}
+
+.container .services {
+    width: 26vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container .services i {
+    position: relative;
+    top: 0;
+    color: #003857;
+    font-size: 6rem;
+    margin: 1rem;
+}
+
+.container .services h4 {
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.container .marcas {
+    width: 15vw;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container .marcas img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+}
+
+.container .row img {
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.container .row .btn-outline-primary {
+    border-color: #003857;
+    color: #003857;
+}
+
+.container .row .btn-outline-primary:hover {
+    background: #003857;
+    color: #fff;
+}
+
+.carousel {
+    padding-inline: 8rem;
 }

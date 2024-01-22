@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+.intro {
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background: url(/assets/fondo.jpg) center;
+    background-size: cover;
+}
+
+.intro h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1em;
+    color: #fff;
+    text-transform: uppercase;
+}
