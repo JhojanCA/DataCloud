@@ -8,12 +8,12 @@ class navbarDatacloud extends HTMLElement {
     <nav id="navdata" class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a id="img1" class="navbar-brand d-none" href="#">
-                <img src="/assets/logoIcon.png" width="30" class="ms-lg-5 ms-md-4 ms-sm-2">
-                <img src="/assets/logoLetras.png" width="180" class="ms-1">
+                <img src="../../assets/logoIcon.png" width="30" class="ms-lg-5 ms-md-4 ms-sm-2">
+                <img src="../../assets/logoLetras.png" width="180" class="ms-1">
             </a>
             <a id="img2" class="navbar-brand" href="#">
-                <img src="/assets/logoIconBlanco.png" width="30" class="ms-lg-5 ms-md-4 ms-sm-2">
-                <img src="/assets/logoLetrasBlanco.png" width="180" class="ms-1">
+                <img src="../../assets/logoIconBlanco.png" width="30" class="ms-lg-5 ms-md-4 ms-sm-2">
+                <img src="../../assets/logoLetrasBlanco.png" width="180" class="ms-1">
             </a>
             <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(/assets/fondo.jpg) center;
+    background: url(../../assets/fondo.jpg) center;
     background-size: cover;
 }
 
