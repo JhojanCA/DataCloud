@@ -136,9 +136,12 @@ class navbarDatacloud extends HTMLElement {
                 width: 120px;
             }
 
+            .navbar-toggler {
+                margin-right: -0.4rem;
+            }
+            
             .navbar-toggler-icon {
                 width: 1.2em;
-                margin-right: -1.4rem;
             }
         }
 
