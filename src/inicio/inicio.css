@@ -298,6 +298,10 @@ body {
         padding-inline: 3rem;
     }
 
+    .container .info {
+        margin: 0rem;
+    }
+
     .carousel .marcas {
         height: 60px;
     }
@@ -341,13 +345,13 @@ body {
     }
 
     .carousel {
-        padding-inline: 2rem;
+        padding-inline: 1rem;
     }
 
     .carousel .marcas {
         width: 25%;
-        height: 60px;
-        margin: 0.4rem;
+        height: 50px;
+        margin: 0.3rem;
     }
 
     .carousel .marcas img {
