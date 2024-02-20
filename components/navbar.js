@@ -135,6 +135,11 @@ class navbarDatacloud extends HTMLElement {
             .logoLetras, .logoLetrasBlanco {
                 width: 120px;
             }
+
+            .navbar-toggler-icon {
+                width: 1.2em;
+                margin-right: -1.4rem;
+            }
         }
 
     </style>`;

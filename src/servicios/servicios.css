@@ -228,27 +228,47 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+    .container .cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-inline: 0;
+        gap: 0.1rem;
+    }
+
     .container .cards .services {
-        width: 240px;
-        height: 240px;
+        width: 180px;
+        height: 180px;
     }
 
     .container .cards .services i {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .container .cards .services p {
         font-size: 0.8rem;
     }
+
+    .container .contenido .lista {
+        margin-left: -1rem;
+    }
 }
 
 @media screen and (max-width: 420px) {
+    .intro {
+        height: 28vh;
+    }
+
     .intro h1 {
-        font-size: 2em;
+        font-size: 1.8em;
+    }
+
+    .container {
+        padding-top: 1rem;
     }
 
     .container h2 {
-        margin: 2rem;
+        margin: 1rem;
         font-size: 1.3rem;
     }
 
@@ -256,26 +276,22 @@ body {
         font-size: 0.9rem;
     }
 
-    .container .cards {
-        gap: 0;
-    }
-
-    .container .cards .services {
-        width: 220px;
-        height: 220px;
-    }
-
-    .container .cards .services i {
-        font-size: 4rem;
-    }
-
-    .container .cards .services p {
-        font-size: 1.1rem;
-    }
-
     .container .marcas {
         width: 120px;
         height: 60px;
         margin: 0.6rem;
+    }
+
+    .container .cards .services {
+        width: 140px;
+        height: 140px;
+    }
+
+    .container .cards .services i {
+        font-size: 2.2rem;
+    }
+
+    .container .cards .services p {
+        font-size: 0.6rem;
     }
 }

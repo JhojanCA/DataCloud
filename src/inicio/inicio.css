@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     background: url(../../assets/fondo.jpg) center;
     background-size: cover;
+    position: relative;
 }
 
 .intro h1 {
@@ -36,7 +37,9 @@ body {
 .intro .gif {
     width: 50px;
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .container {
@@ -282,7 +285,8 @@ body {
 
 @media screen and (max-width: 600px) {
     .intro h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        margin-bottom: 0.6rem;
     }
 
     .container .row img {
@@ -312,15 +316,24 @@ body {
         width: 1.2rem;
         height: 1.2rem;
     }
+
+    .container .empresa .nosotros img {
+        margin: 0;
+    }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
+    .intro {
+        height: 90vh;
+        margin-bottom: -2rem;
+    }
+
     .intro .logo {
-        width: 18%;
+        width: 16%;
     }
 
     .intro .letras {
-        width: 70%;
+        width: 65%;
     }
 
     .container .row img {
@@ -332,10 +345,13 @@ body {
     }
 
     .carousel .marcas {
+        width: 25%;
         height: 60px;
+        margin: 0.4rem;
     }
 
     .carousel .marcas img {
-        width: 200%;
+        width: 240%;
+        padding: 0;
     }
 }
