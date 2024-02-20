@@ -38,7 +38,9 @@ body {
 
 .container a {
     text-decoration: none;
-    cursor: auto;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 .container ul {
@@ -264,10 +266,6 @@ body {
         font-size: 1.8em;
     }
 
-    .container {
-        padding-top: 1rem;
-    }
-
     .container h2 {
         margin: 1rem;
         font-size: 1.3rem;
@@ -275,6 +273,10 @@ body {
 
     .container li {
         font-size: 0.9rem;
+    }
+
+    .container .cards {
+        grid-template-columns: 50% 50%;
     }
 
     .container .marcas {
