@@ -25,6 +25,14 @@ body {
     text-transform: uppercase;
 }
 
+.intro .logo {
+    width: 12%;
+}
+
+.intro .letras {
+    width: 50%;
+}
+
 .intro .gif {
     width: 50px;
     position: absolute;
@@ -39,6 +47,26 @@ body {
     font-family: 'Rubik', sans-serif;
     margin-block: 3rem;
     padding-top: 4rem;
+}
+
+.container .empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.container .empresa .somos {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3rem;
+}
+
+.container .empresa .nosotros img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin: 2rem;
 }
 
 .container h1 {
@@ -63,14 +91,6 @@ body {
     text-align: center;
 }
 
-
-.container img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-}
-
 .container ul {
     list-style: none;
     padding: 0;
@@ -88,8 +108,17 @@ body {
     margin-right: 1rem;
 }
 
-.container .services {
-    width: 26vw;
+.container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-auto-rows: auto;
+    gap: 1.6rem;
+    padding: 1rem;
+}
+
+.container .cards .services {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +127,6 @@ body {
     border-radius: 10px;
     text-align: center;
     padding: 2rem;
-    margin: 1rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -115,24 +143,19 @@ body {
     margin: 1rem;
 }
 
-.container .marcas {
-    width: 15vw;
-    height: 18vh;
+.container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding: 1rem;
+}
+
+.container .info {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f8f9fa;
-    border-radius: 10px;
-    padding: 1.2rem;
+    flex-direction: column;
+    text-align: center;
     margin: 1rem;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-.container .marcas img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 0;
 }
 
 .container .row img {
@@ -155,5 +178,164 @@ body {
 }
 
 .carousel {
-    padding-inline: 8rem;
+    padding-inline: 6rem;
+    margin-inline: 1rem;
+}
+
+.carousel .fila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.carousel .marcas {
+    width: 20%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel .marcas img {
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+    padding: 1rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .carousel {
+        padding-inline: 5rem;
+    }
+
+    .carousel .marcas {
+        height: 100px;
+    }
+
+    .carousel .marcas img {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    .carousel .carousel-control-prev-icon,
+    .carousel .carousel-control-next-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro .logo {
+        width: 15%;
+    }
+
+    .intro .letras {
+        width: 60%;
+    }
+
+    .intro .gif {
+        width: 30px;
+    }
+
+    .container h1 {
+        margin-bottom: 1rem;
+    }
+
+    .container .empresa {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container .empresa .somos {
+        margin-top: 2rem;
+        padding-right: 0rem;
+    }
+
+    .container .empresa .nosotros img {
+        margin-inline: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .container .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel .marcas {
+        width: 25%;
+        height: 80px;
+        margin: 0.4rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .container .row img {
+        width: 60%;
+        margin: 1rem;
+    }
+
+    .carousel {
+        padding-inline: 3rem;
+    }
+
+    .carousel .marcas {
+        height: 60px;
+    }
+
+    .carousel .marcas img {
+        width: 120%;
+    }
+
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+        width: 1rem;
+    }
+
+    .carousel .carousel-control-prev-icon,
+    .carousel .carousel-control-next-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro .logo {
+        width: 18%;
+    }
+
+    .intro .letras {
+        width: 70%;
+    }
+
+    .container .row img {
+        width: 80%;
+    }
+
+    .carousel {
+        padding-inline: 2rem;
+    }
+
+    .carousel .marcas {
+        height: 60px;
+    }
+
+    .carousel .marcas img {
+        width: 200%;
+    }
 }

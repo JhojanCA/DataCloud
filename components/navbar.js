@@ -8,12 +8,12 @@ class navbarDatacloud extends HTMLElement {
     <nav id="navdata" class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a id="img1" class="navbar-brand d-none" href="#">
-                <img src="../../assets/logoIcon.png" width="30" class="ms-lg-5 ms-md-4 ms-sm-2">
-                <img src="../../assets/logoLetras.png" width="180" class="ms-1">
+                <img src="../../assets/logoIcon.png" class="logoIcon ms-lg-5 ms-md-4 ms-sm-2">
+                <img src="../../assets/logoLetras.png" class="logoLetras ms-1">
             </a>
             <a id="img2" class="navbar-brand" href="#">
-                <img src="../../assets/logoIconBlanco.png" width="30" class="ms-lg-5 ms-md-4 ms-sm-2">
-                <img src="../../assets/logoLetrasBlanco.png" width="180" class="ms-1">
+                <img src="../../assets/logoIconBlanco.png" class="logoIconBlanco ms-lg-5 ms-md-4 ms-sm-2">
+                <img src="../../assets/logoLetrasBlanco.png" class="logoLetrasBlanco ms-1">
             </a>
             <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -69,6 +69,14 @@ class navbarDatacloud extends HTMLElement {
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
+        .logoIcon, .logoIconBlanco {
+            width: 30px;
+        }
+        
+        .logoLetras, .logoLetrasBlanco {
+            width: 180px;
+        }
+
         .navbar-toggler {
             border: none;
             margin-inline: 1rem;
@@ -107,6 +115,26 @@ class navbarDatacloud extends HTMLElement {
 
         .navbar .offcanvas-body .nav-link {
             color: #fff;
+        }
+
+        @media screen and (max-width: 600px) {
+            .logoIcon, .logoIconBlanco {
+                width: 20px;
+            }
+            
+            .logoLetras, .logoLetrasBlanco {
+                width: 160px;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .logoIcon, .logoIconBlanco {
+                width: 18px;
+            }
+            
+            .logoLetras, .logoLetrasBlanco {
+                width: 120px;
+            }
         }
 
     </style>`;

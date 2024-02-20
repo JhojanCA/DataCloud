@@ -6,11 +6,11 @@ class footerDatacloud extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <footer id="footer">
-        <div class="row ms-2">
-            <div class="col-5 d-flex align-items-center">
+        <div class="columns ms-2">
+            <div class="imagen">
                 <img src="../../assets/logoBlanco.png" class="logo">
             </div>
-            <div class="col-4">
+            <div class="datos">
                 <p class="mb-1"><b>Dirección:</b></p>
                 <p><i class="fa-solid fa-city ms-1 me-2"></i>Barrio El Socorro - Cartagena, Bolívar</p>
                 <p><i class="fa-solid fa-map-location-dot ms-1 me-2"></i>Plan 332A Manzana 48 Lote 10</p>
@@ -18,7 +18,7 @@ class footerDatacloud extends HTMLElement {
                 <p><i class="fa-solid fa-phone ms-1 me-2"></i>+57 304 544 08 94</p>
                 <p><i class="fa-solid fa-envelope ms-1 me-2"></i>comercial@datacloud.com.co</p>
             </div>
-            <div class="col-3 d-flex flex-column">
+            <div class="redes">
                 <p class="ms-4 mb-3"><b>Síguenos en:</b></p>
                 <ul class="icons d-flex flex-wrap">
                     <li>
@@ -50,6 +50,28 @@ class footerDatacloud extends HTMLElement {
             color: #fff;
             padding: 2rem 3rem;
             margin-top: 8rem;
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-auto-rows: auto;
+        }
+
+        .imagen {
+            display: flex;
+            align-items: center;
+        }
+        
+        .datos {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .redes {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2rem;
         }
 
         .logo {
@@ -96,6 +118,73 @@ class footerDatacloud extends HTMLElement {
 
         footer .icons li:hover a {
             color: #003857;
+        }
+
+        @media screen and (max-width: 900px) {
+            .logo {
+                width: 80%;
+                height: auto;
+            }
+
+            footer p {
+                font-size: 14px;
+            }
+            
+            footer p i {
+                font-size: 12px;
+            }
+
+            footer .icons li {
+                width: 40px;
+                height: 40px;
+            }
+
+            footer .icons li a {
+                font-size: 22px;
+            }
+
+            .redes {
+                margin-top: 2rem;
+                margin-left: 0rem;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .datos {
+                margin-top: 2rem;
+            }            
+            
+            .imagen {
+                justify-content: center;
+            }
+            
+            .datos {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .redes {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2rem;
+                margin-left: -1rem;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .logo {
+                width: 90%;
+            }
+
+            footer p {
+                font-size: 13px;
+            }
+            
+            footer p i {
+                font-size: 12px;
+            }
         }
     </style>`;
   }
