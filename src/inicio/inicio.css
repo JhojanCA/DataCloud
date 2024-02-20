@@ -324,7 +324,7 @@ body {
 
 @media screen and (max-width: 420px) {
     .intro {
-        height: 90vh;
+        height: 85vh;
         margin-bottom: -2rem;
     }
 

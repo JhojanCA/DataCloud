@@ -231,14 +231,15 @@ body {
     .container .cards {
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 45% 55%;
         padding-inline: 0;
-        gap: 0.1rem;
+        gap: 0.4rem;
     }
 
     .container .cards .services {
         width: 180px;
         height: 180px;
+        margin: 0.4rem;
     }
 
     .container .cards .services i {
