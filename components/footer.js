@@ -104,6 +104,7 @@ class footerDatacloud extends HTMLElement {
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
 
         footer .icons li:hover {

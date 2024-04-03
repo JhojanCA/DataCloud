@@ -81,6 +81,7 @@ class navbarDatacloud extends HTMLElement {
         .navbar-toggler {
             border: none;
             margin-inline: 1rem;
+            overflow: auto;
         }
 
         .nav-link {
@@ -93,6 +94,7 @@ class navbarDatacloud extends HTMLElement {
             border-bottom: 2px solid transparent;
             margin-inline: 10px;
             cursor: pointer;
+            overflow: hidden;
         }
 
         .nav-link::after {
