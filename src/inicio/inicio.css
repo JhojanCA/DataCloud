@@ -326,7 +326,17 @@ body {
     }
 }
 
+@media screen and (min-width: 420px) {
+    #carousel2 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 420px) {
+    #carousel1 {
+        display: none;
+    }
+
     .intro {
         height: 86vh;
         margin-bottom: -2rem;
@@ -340,6 +350,10 @@ body {
         width: 65%;
     }
 
+    .container {
+        margin-block: 1rem;
+    }
+
     .container .row img {
         width: 80%;
     }
@@ -349,13 +363,12 @@ body {
     }
 
     .carousel .marcas {
-        width: 25%;
-        height: 50px;
-        margin: 0.3rem;
+        width: 45%;
+        height: 80px;
     }
 
     .carousel .marcas img {
-        width: 240%;
-        padding: 0;
+        width: 100%;
+        padding: 0.6rem;
     }
 }

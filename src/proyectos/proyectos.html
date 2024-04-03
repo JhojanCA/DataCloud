@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="proyectos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -17,7 +18,7 @@
         <h1>Proyectos</h1>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <h1>Últimos proyectos ejecutados</h1>
         <br>
         <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -113,7 +114,7 @@
 
                         <div class="card">
                             <img
-                                src="https://scontent.fclo9-1.fna.fbcdn.net/v/t39.30808-6/417159525_1312085402916928_3965769338522348531_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeESwRnspYSq6xOD0NmxiTqm_X0Ye0KQsHT9fRh7QpCwdHqSjhjltN2K3xL0g7INKMaVtxXkyuSeyELrGV8uWBIv&_nc_ohc=zD3dXZ10JL4AX-BU3Wp&_nc_ht=scontent.fclo9-1.fna&oh=00_AfCqPxL26YUlalamCJYj2D_a05sT4yjNT_rxXBf6dJkE0A&oe=65EA673F" />
+                                src="https://scontent.fczu1-1.fna.fbcdn.net/v/t39.30808-6/417159525_1312085402916928_3965769338522348531_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=vQFap7w6w3YAX-jObcw&_nc_ht=scontent.fczu1-1.fna&oh=00_AfDfKGiZdh9Z7zp8Omfzcz3Ge6hQ0FWtN04FL9wUleVQIw&oe=66122C7F" />
                             <div class="detalles">
                                 <h5>Pool store</h5>
                                 <p>
@@ -238,7 +239,7 @@
                 <div class="carousel-item">
                     <div class="card">
                         <img
-                            src="https://scontent.fclo9-1.fna.fbcdn.net/v/t39.30808-6/417159525_1312085402916928_3965769338522348531_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeESwRnspYSq6xOD0NmxiTqm_X0Ye0KQsHT9fRh7QpCwdHqSjhjltN2K3xL0g7INKMaVtxXkyuSeyELrGV8uWBIv&_nc_ohc=zD3dXZ10JL4AX-BU3Wp&_nc_ht=scontent.fclo9-1.fna&oh=00_AfCqPxL26YUlalamCJYj2D_a05sT4yjNT_rxXBf6dJkE0A&oe=65EA673F" />
+                            src="https://scontent.fczu1-1.fna.fbcdn.net/v/t39.30808-6/417159525_1312085402916928_3965769338522348531_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=vQFap7w6w3YAX-jObcw&_nc_ht=scontent.fczu1-1.fna&oh=00_AfDfKGiZdh9Z7zp8Omfzcz3Ge6hQ0FWtN04FL9wUleVQIw&oe=66122C7F" />
                         <div class="detalles">
                             <h5>Pool store</h5>
                             <p>
@@ -270,6 +271,13 @@
 
     <script src="../../components/navbar.js"></script>
     <script src="../../components/footer.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
     <script src="https://kit.fontawesome.com/fa0d43a4cf.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
