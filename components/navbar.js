@@ -61,7 +61,7 @@ class navbarDatacloud extends HTMLElement {
         .navbar {
             transition: .4s ease-in-out;
             position: fixed;
-            width: 100%;
+            width: 100vw;
             z-index: 9999;
         }
 

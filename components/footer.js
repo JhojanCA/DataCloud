@@ -5,7 +5,7 @@ class footerDatacloud extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <footer id="footer" data-aos="zoom-out-up">
+    <footer id="footer">
         <div class="columns ms-2">
             <div class="imagen">
                 <img src="../../assets/logoBlanco.png" class="logo">
