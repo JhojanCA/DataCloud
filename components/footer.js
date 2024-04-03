@@ -50,6 +50,7 @@ class footerDatacloud extends HTMLElement {
             color: #fff;
             padding: 2rem 3rem;
             margin-top: 8rem;
+            overflow: auto;
         }
 
         .columns {

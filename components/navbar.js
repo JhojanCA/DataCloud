@@ -63,6 +63,7 @@ class navbarDatacloud extends HTMLElement {
             position: fixed;
             width: 100vw;
             z-index: 9999;
+            overflow: auto;
         }
 
         .box {
