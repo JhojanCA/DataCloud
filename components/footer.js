@@ -5,7 +5,7 @@ class footerDatacloud extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <footer id="footer">
+    <footer id="footer" data-aos="fade-down">
         <div class="columns ms-2">
             <div class="imagen">
                 <img src="../../assets/logoBlanco.png" class="logo">
@@ -114,6 +114,10 @@ class footerDatacloud extends HTMLElement {
             font-size: 26px;
             color: #fff;
             margin-inline: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
         }
 
         footer .icons li:hover a {
